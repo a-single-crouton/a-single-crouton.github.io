@@ -38,20 +38,42 @@ body {
 
 /* 8-BIT GRAPHICS */
 
-.pixel-card-01 {
-  width: 200px;
-  height: 200px;
-  background: url("./pixel_graphics/pixel-card-01.svg") center center cover;
+.pixel-card-vert-01 {
+  width: 400px;
+  height: 500px;
+  background: url("./pixel_graphics/pixel-card-01.svg") center center;
+  background-size: cover;
+}
+
+.pixel-card-horz-01 {
+  width: 500px;
+  height: 500px;
+  background: url("./pixel_graphics/pixel-card-01.svg") center center;
+  background-size: cover;
+  transform: rotate(90deg);
+  transform-origin: center;
 }
 
 .pixel-card-02 {
-  width: 64px;
-  height: 64px;
-  background: url('./pixel_graphics/pixel-card-02.svg') center center cover;
+  width: 500px;
+  height: 500px;
+  background: url('./pixel_graphics/pixel-card-02.svg') center center;
+  background-size: contain;
 }
 
-.pixel-card-03 {
-  width: 64px;
-  height: 64px;
-  background: url('./pixel_graphics/pixel-card-02.svg') center center cover;
+.pixel-column-01 {
+  width: 500px;
+  height: 500px;
+  background: url('./pixel_graphics/pixel-card-03.svg') center center;
+  background-size: cover;
 }
+
+.pixel-row-01 {
+  width: 500px;
+  height: 500px;
+  background: url('./pixel_graphics/pixel-card-03.svg') center center;
+  background-size: cover;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
