@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face{
+  font-family: "VT323";
+  src: url("VT323-Regular.ttf") format("truetype");
+}
+
 a {
   text-decoration: none;
   color: #f7f7f7;
@@ -15,65 +20,92 @@ a:visited {
 }
 
 body {
-  background-color: #C2C2C2;
+  background-color: #0b444e;
 }
 
+/* HEADER ELEMENTS */
 .profile-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.profile-background {
+
+.profile-ring {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#eef4c6;
   margin: 40px;
+  height: 360px;
+  width: 460px;
+  /* clip-path: circle(128px at 46% 28%); */
+  clip-path: circle(130px);
+  object-fit: cover;
+}
+
+.profile-background {
+  background-color:#314046;
   height: 450px;
   width: 450px;
-  clip-path: circle(120px at 46% 28%); /* Circle with radius and offset */
+  clip-path: circle(120px);
   object-fit: cover;
 }
 
 .profile-sprite {
   width: 360px;
   height: 360px;
+  object-fit: cover;
+  transform: translate(5%, 28%);
+}
+
+/* BODY ELEMENTS */
+
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 8-BIT GRAPHICS */
 
-.pixel-card-vert-01 {
-  width: 400px;
-  height: 500px;
-  background: url("./pixel_graphics/pixel-card-01.svg") center center;
+.pixel-column-2 {
+  width: 128px;
+  height: 256px;
+  background: url("./pixel_graphics/pixel-column-2.svg") center center;
   background-size: cover;
 }
 
-.pixel-card-horz-01 {
-  width: 500px;
-  height: 500px;
-  background: url("./pixel_graphics/pixel-card-01.svg") center center;
+.pixel-row-2 {
+  width: 256px;
+  height: 128px;
+  background: url("./pixel_graphics/pixel-row-2.svg") center center;
   background-size: cover;
-  transform: rotate(90deg);
-  transform-origin: center;
 }
 
-.pixel-card-02 {
-  width: 500px;
-  height: 500px;
-  background: url('./pixel_graphics/pixel-card-02.svg') center center;
-  background-size: contain;
+.pixel-row-body {
+  padding: 48px 0px;
+  width: 1280px;
+  height: 256px;
+  background: url("./pixel_graphics/pixel-row-body.svg") center center;
+  background-size: cover;
+  font-family: 'VT323', monospace;
+  font-weight: 500;
+  font-size: 72px;
+  text-align: center;
+  color: #2f332e;
 }
 
 .pixel-column-01 {
-  width: 500px;
-  height: 500px;
-  background: url('./pixel_graphics/pixel-card-03.svg') center center;
+  width: 128px;
+  height: 256px;
+  background: url("./pixel_graphics/pixel-column-2.svg") center center;
   background-size: cover;
 }
 
-.pixel-row-01 {
-  width: 500px;
-  height: 500px;
-  background: url('./pixel_graphics/pixel-card-03.svg') center center;
+.pixel-row-02 {
+  width: 256px;
+  height: 128px;
+  background: url("./pixel_graphics/pixel-row-2.svg") center center;
   background-size: cover;
-  transform: rotate(90deg);
-  transform-origin: center;
 }
 
