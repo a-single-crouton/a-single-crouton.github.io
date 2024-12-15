@@ -5,8 +5,13 @@
 }
 
 @font-face{
+  font-family: "sys";
+  src: url("fonts/sys.ttf") format("truetype");
+}
+
+@font-face{
   font-family: "VT323";
-  src: url("VT323-Regular.ttf") format("truetype");
+  src: url("fonts/VT323-Regular.ttf") format("truetype");
 }
 
 a {
@@ -88,8 +93,8 @@ body {
   height: 256px;
   background: url("./pixel_graphics/pixel-row-body.svg") center center;
   background-size: cover;
-  font-family: 'VT323', monospace;
-  font-weight: 500;
+  font-family: 'sys', monospace;
+  font-weight: 400;
   font-size: 72px;
   text-align: center;
   color: #2f332e;
