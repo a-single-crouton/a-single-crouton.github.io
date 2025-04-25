@@ -15,6 +15,21 @@
   src: url("fonts/VT323-Regular.ttf") format("truetype");
 }
 
+@font-face{
+  font-family: "munro";
+  src: url("fonts/munro.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro-narrow";
+  src: url("fonts/munro-narrow.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro-small";
+  src: url("fonts/munro-small.ttf") format("truetype");
+}
+
 a {
   text-decoration: none;
   color: #f7f7f7;
@@ -171,7 +186,7 @@ body {
   height: 94vh;
 }
 #about-profile-container {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 100%;
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
@@ -189,26 +204,66 @@ body {
   position: relative;
 }
 
-#about-header-container {
+/* #about-header-container {
   border: 2px solid red;
   grid-column: 4 / span 6;
   grid-row: 1 / span 1;
-}
+} */
 
 #about-body-container {
-  border: 2px solid yellow;
+  padding: 48px;
+  /* border: 2px solid yellow; */
   grid-column: 4 / span 6;
-  grid-row: 2 / span 6;
-  font-family: 'VT323', Courier, monospace;
+  grid-row: 1 / span 8;
+}
+
+#about-namespace {
+  font-family: VT323, monospace;
   color: #eef4c6;
-  padding: 16px;
-  line-height: 1.5;
-  font-size: 1.0rem;
+  padding: 4px;
+  /* line-height: 1.5; */
+  font-size: 3.0rem;
   font-weight: 300;
 }
 
+.about-info{
+  font-family: VT323, monospace;
+  color: #eef4c6;
+  /* padding: 16px; */
+  line-height: 1.5;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.about-current-title{
+  font-family: VT323, monospace;
+  color: #eef4c6;
+  /* padding: 16px; */
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.job-title{
+  font-family: VT323, monospace;
+  color: #eef4c6;
+  /* padding: 16px; */
+  line-height: 1.5;
+  font-size: 2.0rem;
+  font-weight: 300;
+}
+
+.job-desc{
+  font-family: munro, monospace;
+  color: #eef4c6;
+  /* padding: 16px; */
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
 #about-stats-container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   grid-column: 1 / span 3;
   grid-row: 3 / span 4;
   height: 100%;
@@ -251,25 +306,25 @@ body {
 #about-stats {
   display: flex;
 }
-#html-stat {
-  /* border: 2px solid orange; */
+/* #html-stat {
+  border: 2px solid orange;
 }
 #css-stat {
-  /* border: 2px solid skyblue; */
+  border: 2px solid skyblue;
 }
 
 #ng-stat {
-  /* border: 2px solid maroon; */
+  border: 2px solid maroon;
 }
 #node-stat {
-  /* border: 2px solid limegreen; */
+  border: 2px solid limegreen;
 }
 #sql-stat {
-  /* border: 2px solid cornflowerblue; */
+  border: 2px solid cornflowerblue;
 }
 #ux-stat {
-  /* border: 2px solid indigo; */
-}
+  border: 2px solid indigo;
+} */
 
 
 
