@@ -51,7 +51,7 @@ body {
   flex-direction: column;
 }
 
-/* CRT ELEMENTS */
+/* CRT ANIMATION */
 
 #crt:before {
   content: " ";
@@ -64,7 +64,7 @@ body {
   background: linear-gradient(
       to bottom,
       rgba(18, 16, 16, 0) 50%,
-      rgba(9, 8, 8, 0.25) 50%
+      rgba(9, 8, 8, 0.20) 50%
   );
   background-size: 100% 8px;
   z-index: 2;
@@ -78,7 +78,7 @@ body {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0) 0%,
-      rgba(255, 255, 255, 0.2) 10%,
+      rgba(255, 255, 255, 0.20) 10%,
       rgba(0, 0, 0, 0.1) 100%
   );
   opacity: 0.1;
@@ -99,38 +99,9 @@ body {
   }
 }
 
-/* NAVIGATION ELEMENTS */
-
-#navbar {
-  width: 100%;
-  height: 60px;
-  background-color: #1f2c31;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  height: 100%;
-  padding: 0px 50px;
-  color: #eef4c6;
-  font-family: 'sys', monospace;
-  font-size: 20px;
-}
-
-.active-nav {
-  background-color: #eef4c6;
-}
-
-.active-nav a {
-  color: #1f2c31;
-}
-
-/* HEADER ELEMENTS */
+/* AVATAR ELEMENTS */
 .profile-container {
+  margin: 20px 20px 0px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +112,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color:#eef4c6;
-  margin: 40px;
+  margin: auto;
   height: 340px;
   width: 440px;
   clip-path: circle(130px);
@@ -167,8 +138,12 @@ body {
 
 .title-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+    font-family: 'munro', monospace;
+  color: #eef4c6 ;
+  line-height: 1.5;
+  font-size: 24px;
+  margin-bottom: 36px;
 }
 
 .body-container {
@@ -177,200 +152,96 @@ body {
   justify-content: center;
 }
 
-/* ABOUT */
-#about-grid-container {
+
+/* CASE STUDY ELEMENTS */
+
+/* **CV ELEMENTS** */
+
+.cv-job-block {
+  border: 2px solid blue;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 100vw;
-  height: 94vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(11, 1fr);
 }
-#about-profile-container {
-  /* border: 2px solid green; */
-  height: 100%;
+.cv-header{
+  border: 2px solid salmon;
+}
+.cv-job-title {
   grid-column: 1 / span 3;
-  grid-row: 1 / span 2;
-}
-
-.about-profile-ring {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:#eef4c6;
-  height: 100%;
-  width: 100%;
-  clip-path: circle(130px);
-  overflow: hidden;
-  position: relative;
-}
-
-/* #about-header-container {
   border: 2px solid red;
-  grid-column: 4 / span 6;
-  grid-row: 1 / span 1;
-} */
-
-#about-body-container {
-  padding: 48px;
-  /* border: 2px solid yellow; */
-  grid-column: 4 / span 6;
-  grid-row: 1 / span 8;
+ 
 }
 
-#about-namespace {
-  font-family: VT323, monospace;
-  color: #eef4c6;
-  padding: 4px;
-  /* line-height: 1.5; */
-  font-size: 3.0rem;
-  font-weight: 300;
+.cv-job-duration {
+  grid-column: 4 / span 2;
+  border: 2px solid green;
+  font-family: 'munro-narrow';
 }
 
-.about-info{
-  font-family: VT323, monospace;
-  color: #eef4c6;
-  /* padding: 16px; */
-  line-height: 1.5;
-  font-size: 1.3rem;
-  font-weight: 300;
+.cv-job-desc {
+  border: 2px solid purple;
+  font-family: 'munro-narrow';
+  grid-column: 1 / span 5;
+  grid-row: 2 / span 5;
 }
 
-.about-current-title{
-  font-family: VT323, monospace;
-  color: #eef4c6;
-  /* padding: 16px; */
-  line-height: 1.5;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.job-title{
-  font-family: VT323, monospace;
-  color: #eef4c6;
-  /* padding: 16px; */
-  line-height: 1.5;
-  font-size: 2.0rem;
-  font-weight: 300;
-}
-
-.job-desc{
-  font-family: munro, monospace;
-  color: #eef4c6;
-  /* padding: 16px; */
-  line-height: 1.5;
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-#about-stats-container {
-  /* border: 2px solid blue; */
-  grid-column: 1 / span 3;
-  grid-row: 3 / span 4;
-  height: 100%;
-  width: 100%;
-}
-.icon {
-  /* padding: 8px; */
-  height: 72px;
-  width: 72px;
-}
-.stat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 8px 0px;
-}
-
-.stat-title{
-  position: relative;
-  bottom: 20px;
-  left: 140px;
-}
-.stat-gauge {
-  display: flex;
-  align-items: center;
-  background-color: #1f2c31;
-  margin-left: 15px;
-  padding: 0px 5px;
-  width: 80%;
-  border-radius: 40px;
-  height: 20px;
-}
-
-.stat-gauge-fill {
-  background-color: #8e1533;
-  width: 100%;
-  border-radius: 40px;;
-  height: 13px;
-}
-#about-stats {
-  display: flex;
-}
-/* #html-stat {
+.cv-job-projects {
   border: 2px solid orange;
+  grid-column: 1 / span 5;
+  grid-row: 7 / span 5;
 }
-#css-stat {
-  border: 2px solid skyblue;
-}
-
-#ng-stat {
-  border: 2px solid maroon;
-}
-#node-stat {
-  border: 2px solid limegreen;
-}
-#sql-stat {
-  border: 2px solid cornflowerblue;
-}
-#ux-stat {
-  border: 2px solid indigo;
-} */
-
-
 
 
 /* 8-BIT GRAPHICS */
-.gba-title-box {
-  position: relative;
-  display: block;
-  padding: 2px;
-  background: #fef7c0;
-  border: 4px solid #000;
+
+.gba-nav-container {
+  margin: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.gba-grid-box {
-  width: 98%;
-  height: 98%;
-  margin: 8px;
-  position: relative;
-  display: block;
-  padding: 2px;
-  background: #fef7c0;
-  border: 4px solid #000;
+.gba-container {
+  width: auto;
+  margin: 0px 0px 0px 0px;
 }
 
- .gba-inner-border {
+ .gba-nav-content {
+  text-align: center;
+  width: 400px;
   height: 100%;
-  padding: 1rem 4.5rem;
+  /* padding: 1rem 4.5rem; */
   border: 2px solid #2f332e;
   background-color: #eef4c6;
-  font-family: 'sys', monospace;
+  font-family: 'munro-small', monospace;
+  font-size: 24px;;
   color: #000;
   margin: 0;
   line-height: 1.5;
 }
 
-.gba-inner-border {
-  padding: 1rem 1.5rem;
+ .gba-content {
+  width: auto;
+  height: 100%;
+  /* padding: 1rem 4.5rem; */
   border: 2px solid #2f332e;
   background-color: #eef4c6;
-  font-family: 'sys', monospace;
+  font-family: 'munro-small', monospace;
+  font-size: 24px;;
   color: #000;
   margin: 0;
   line-height: 1.5;
 }
 
 /* GBA DECORATION CORNERS */
+
+.gba-ornaments {
+  position: relative;
+  display: block;
+  padding: 2px;
+  background: #fef7c0;
+  border: 4px solid #000;
+}
 .gba-ornaments::before,
 .gba-ornaments::after {
   content: '';
@@ -387,7 +258,7 @@ body {
   border-radius: 25% 25%;
 }
 .gba-ornaments::after {
-  bottom: -6px;
+  bottom:-6px;
   right: -6px;
   border-radius: 25% 25%;
 }
