@@ -139,7 +139,7 @@ body {
 .title-container {
   display: flex;
   justify-content: center;
-    font-family: 'munro', monospace;
+  font-family: 'munro', monospace;
   color: #eef4c6 ;
   line-height: 1.5;
   font-size: 24px;
@@ -152,6 +152,39 @@ body {
   justify-content: center;
 }
 
+/* PROJECT ELEMENTS */
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-grid {
+  display: grid;
+  padding: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 2px solid orange;
+}
+.project-img {
+  border: 2px solid blue;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+}
+.project-title {
+  border: 2px solid red;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+.project-date {
+  border: 2px solid green;
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+.project-desc {
+  border: 2px solid purple;
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 2;
+}
 
 /* CASE STUDY ELEMENTS */
 
@@ -202,8 +235,9 @@ body {
 }
 
 .gba-container {
-  width: auto;
-  margin: 0px 0px 0px 0px;
+  width: 700px;
+  height: 280px;
+  margin: 4px 4px;
 }
 
  .gba-nav-content {
@@ -213,11 +247,12 @@ body {
   /* padding: 1rem 4.5rem; */
   border: 2px solid #2f332e;
   background-color: #eef4c6;
-  font-family: 'munro-small', monospace;
-  font-size: 24px;;
+  font-family: 'munro', monospace;
+  font-size: 24px;
   color: #000;
   margin: 0;
   line-height: 1.5;
+  letter-spacing: 0.1rem;
 }
 
  .gba-content {
@@ -231,6 +266,12 @@ body {
   color: #000;
   margin: 0;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 660px) {
+  .gba-container {
+  width: auto
+}
 }
 
 /* GBA DECORATION CORNERS */
@@ -262,3 +303,6 @@ body {
   right: -6px;
   border-radius: 25% 25%;
 }
+
+/* **MEDIA QUERIES** */
+
