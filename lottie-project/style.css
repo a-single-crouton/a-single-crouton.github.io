@@ -1,5 +1,63 @@
-#container-one, #container-two, #container-three, #container-four, #container-five {
-width: 50px;
-height:50px;
-background-color: #575757;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
+
+body {
+        background-color: #0ABAFF;
+}
+
+#message-container {
+    width: auto;
+    height: 85%;
+}
+
+#message-window {
+    margin: 48px auto auto auto;
+    width: 80vw;
+    height: 90vh;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#lottie-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+#container-five {
+    width: 48px;
+    height: 48px;
+    margin-right: 36px;
+}
+
+#container-one, #container-four, #container-five {
+    width: 48px;
+    height: 48px;
+}
+
+#container-two {
+    width: 50px;
+    height:50px;
+}
+
+#container-three {
+    height: 32px;
+    width: 32px;
+    margin: 0px 12px;
+}
+
+ #container-four {
+    width: 48px;
+    height: 48px;
+ }
+
+ #container-five {
+    width: 48px;
+    height: 48px;
+ }
+
