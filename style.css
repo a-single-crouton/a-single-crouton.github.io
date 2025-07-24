@@ -260,7 +260,7 @@ p {
 /* **CV ELEMENTS** */
 
 .cv-job-block {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(11, 1fr);
@@ -270,18 +270,18 @@ p {
 }
 .cv-job-title {
   grid-column: 1 / span 3;
-  border: 2px solid red;
+  /* border: 2px solid red; */
  
 }
 
 .cv-job-duration {
   grid-column: 4 / span 2;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   font-family: 'munro-narrow';
 }
 
 .cv-job-desc {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   font-family: 'munro-narrow';
   grid-column: 1 / span 5;
   grid-row: 2 / span 5;
@@ -289,7 +289,7 @@ p {
 
 .cv-job-projects {
   height: 100%;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   grid-column: 1 / span 5;
   grid-row: 7 / span 5;
 }
@@ -400,14 +400,14 @@ p {
   #about-profile-container {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 100%;
     width: 100%;
     min-width: 400px;
     /* position: relative; */
   }
   #about-stats-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     grid-column: 1 / span 3;
     grid-row: 2 / span 7;
     height: 100%;
@@ -415,15 +415,18 @@ p {
   }
 
   #about-content-container {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     grid-column: 4 / span 6;
     grid-row: 1 / span 8;
     font-family: 'VT323', Courier, monospace;
     color: #eef4c6;
-    padding: 16px 32px;
-    line-height: 1.5;
+    padding: 16px 48px;
+    line-height: 1.6;
     font-size: 1.0rem;
     font-weight: 300;
+  }
+  .about-text {
+    font-size: 28px;;
   }
   .about-profile-ring {
     display: flex;
@@ -492,7 +495,7 @@ p {
   #about-stats {
     display: flex;
   }
-  #html-stat {
+  /* #html-stat {
     border: 2px solid orange;
   }
   #css-stat {
@@ -510,7 +513,7 @@ p {
   }
   #ux-stat {
     border: 2px solid indigo;
-  }
+  } */
 
   @media only screen and (max-width: 900px) {
   .gba-container {

@@ -1,0 +1,99 @@
+
+table {
+    width: 100%;
+}
+header {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.contacts-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.metadata-container {
+    margin-top: 14px;
+}
+.email-template {
+    width: 100%;
+}
+
+.notification-body {
+    padding: 12px;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+.inner-pane {
+    background-color: #FFFFFF;
+    margin: 24px auto;
+    border-radius: 5px;
+    border: 2px solid #0abaff;
+    /* width: auto; */
+    padding: 12px;
+}
+.context-text {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 12px;
+}
+.message-window {
+    margin: auto; 
+    padding: 12px;
+    width: 100%; 
+    border-collapse: collapse;
+}
+.chat-bubble {
+    display: inline-block;
+}
+.outbound-message {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    width: 45%;
+    background-color: #dfe1e4;
+    padding: 20px;
+    vertical-align: top;
+    margin: 10px 0;
+}
+.inbound-message {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    width: 45%;
+    background-color: #e1f2ff;
+    padding: 20px;
+    vertical-align: top;
+    margin: 10px 0;
+}
+.inbound-message-container {
+    text-align: right;
+    vertical-align: middle;
+    /* background-color: #e4ffe4; */
+}
+.outbound-message-container {
+    text-align: left;
+    vertical-align: top;
+    /* background-color: #e4e4ff; */
+}
+.avatar-container {
+    display: inline-block;
+    margin: auto;
+    color: #38bad3;
+    height: 40px;
+    width: 40px;
+    background-color: #0a9aff;
+    border-radius: 50%;
+} 
+.avatar {
+color: white;
+text-align: center;
+font-weight: 800;
+padding-top: 25%;
+font-size: 16px;
+}
+
+.message-body {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
