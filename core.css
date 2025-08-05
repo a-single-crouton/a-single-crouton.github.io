@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +8,19 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+body {
+  background-color: #0b444e;
+}
+
+h1 {
+  font-family: munro, arial, mono;
+}
+p {
+  font-size: 24px;
+  font-family: VT323, arial, mono;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @font-face{
@@ -33,23 +46,9 @@ a {
 @font-face{
   font-family: "munro-small";
   src: url("fonts/munro-small.ttf") format("truetype");
-} */
-
-/* body {
-  background-color: #0b444e;
 }
 
-h1 {
-  font-family: munro, arial, mono;
-}
-p {
-  font-size: 24px;
-  font-family: VT323, arial, mono;
-} */
-
-
-
-/* CRT ANIMATION
+/* CRT ANIMATION */
 
 #crt:before {
   content: " ";
@@ -98,6 +97,8 @@ p {
   }
 }
 
+/* RETURN BUTTON, NAVIGATION */
+
 #return-button {
   position: fixed;
   top: 8px;
@@ -126,9 +127,37 @@ p {
   min-width: 98%;
   min-height: 98%;
   z-index: 0;
-} */
+}
 
-/* AVATAR ELEMENTS
+/* BODY ELEMENTS */
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'munro', monospace;
+  color: #eef4c6 ;
+  line-height: 1.5;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'munro-small', monospace;
+  color: #eef4c6;
+  font-size: 32px;
+  margin-bottom: 36px;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* AVATAR ELEMENTS */
 .profile-container {
   margin: 20px 20px 0px 20px;
   display: flex;
@@ -160,41 +189,104 @@ p {
   height: 55%;
   object-fit: center;
   transform: translate(35%, 45%);
-} */
-
-/* BODY ELEMENTS
-
-.title-container {
-  display: flex;
-  justify-content: center;
-  font-family: 'munro', monospace;
-  color: #eef4c6 ;
-  line-height: 1.5;
-  font-size: 24px;
-  margin-bottom: 36px;
 }
-
-.body-container {
-  display: flex;
-  justify-content: center;
-  font-family: 'munro-small', monospace;
-  color: #eef4c6;
-  font-size: 32px;
-  margin-bottom: 36px;
-}
-
-.body-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* PROJECT ELEMENTS */
-
-/* **CV ELEMENTS** */
 
 /* 8-BIT GRAPHICS */
 
+.gba-nav-container {
+  margin: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gba-card-container {
+  width: 80%;
+  height: 280px;
+  margin: 4px 4px;
+}
+
+.gba-modal-container {
+  width: 80vw;
+  height: 80vh;
+  /* margin: 4px 4px; */
+}
+ 
+ .gba-nav-content {
+  text-align: center;
+  width: 400px;
+  height: 100%;
+  border: 2px solid #2f332e;
+  background-color: #eef4c6;
+  font-family: 'munro', monospace;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
+ .gba-modal-content {
+  width:80vw;
+  height:100%;
+  padding: 16px;
+  border: 2px solid #2f332e;
+  background-color: #eef4c6;
+  font-family: 'munro-small', monospace;
+  font-size: 24px;
+  color: #000;
+  /* line-height: 1.5; */
+}
+
+ .gba-content {
+  width:100%;
+  height: 260px;
+  border: 2px solid #2f332e;
+  background-color: #eef4c6;
+  font-family: 'munro-small', monospace;
+  font-size: 24px;;
+  color: #000;
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* GBA DECORATION CORNERS */
 
-/* **ABOUT** */
+.gba-ornaments {
+  position: relative;
+  display: block;
+  padding: 2px;
+  background: #fef7c0;
+  border: 4px solid #000;
+}
+
+.gba-ornaments::before,
+.gba-ornaments::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-color: #000;
+  border: solid 4px #000;
+  background-color: #eef4c6;
+}
+.gba-ornaments::before {
+  top: -6px;
+  left: -6px;
+  border-radius: 25% 25%;
+}
+.gba-ornaments::after {
+  bottom:-6px;
+  right: -6px;
+  border-radius: 25% 25%;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media only screen and (max-width: 900px) {
+  .gba-container {
+    margin: 4px 4px;
+    width: 100%;
+    height: 280px;
+  }
+}

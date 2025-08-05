@@ -1,0 +1,160 @@
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 68px 12px 12px 12px;
+}
+.project-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 8px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 4px double #000;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 6;
+}
+
+.bg-light {
+  background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #2b2b2b;
+}
+
+.project-title {
+  font-weight: bold;
+  margin-left: 8px;
+  grid-column: 4 / span 4;
+  grid-row: 1 / span 1;
+}
+.project-date {
+  font-weight: bold;
+  margin-left: 8px;
+  grid-column: 4 / span 4;
+  grid-row: 2 / span 1;
+}
+.project-desc {
+  margin-left: 8px;
+  font-family: munro, mono;
+  font-size: 22px;
+  grid-column: 4 / span 4;
+  grid-row: 3 / span 4;
+}
+
+/* **PROJECT ITEM MODAL** */
+#projects-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#projects-modal.show {
+  display: flex;
+}
+.modal-content {
+height: 90%;
+}
+.modal-header,
+.modal-footer {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.modal-footer {
+  border-top: 1px solid #eee;
+  border-bottom: none;
+}
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-return-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* GBA DECORATIONS, ABOUT */
+#projects-modal .gba-ornaments {
+  height: 100%;
+}
+
+.gba-about-modal-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+}
+
+.gba-modal-title{
+  border: solid 2px red;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+}
+.gba-modal-img{
+  border: solid 2px red;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 8;
+}
+.gba-modal-desc{
+  border: solid 2px red;
+  grid-column: 1 / span 4;
+  grid-row: 10 / span 7;
+}
+.gba-modal-notes{
+  border: solid 2px red;
+    grid-column: 5 / span 4;
+  grid-row: 1 / span 13;
+}
+.gba-modal-controls{
+  border: solid 2px red;
+    grid-column: 5 / span 4;
+  grid-row: 14 / span 2;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .project-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  }
+  .project-desc {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    display: none;
+  }
+  .project-title {
+    margin: 0px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+  }
+  .project-date {
+    margin: 0px;
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .project-img {
+    border: 2px solid #000;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 5;
+  }
+}
