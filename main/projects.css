@@ -93,7 +93,7 @@ height: 90%;
 }
 
 .gba-modal-desc p{
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .gba-modal-notes{
@@ -146,6 +146,8 @@ height: 90%;
   display: flex;
   justify-content: flex-end;
   margin-right: 24px;
+  margin-left: 4px;
+  border-left: solid black 2px;
 }
 
 
