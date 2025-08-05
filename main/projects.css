@@ -83,8 +83,22 @@ height: 90%;
 .modal-return-button {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  
   cursor: pointer;
+}
+
+.gba-modal-img img{
+  width: auto;
+  height: auto;
+}
+
+.gba-modal-desc p{
+  font-size: 1rem;
+}
+
+.gba-modal-notes{
+  font-size: 1rem;
+  padding: 4px 8px;
 }
 
 /* GBA DECORATIONS, ABOUT */
@@ -104,26 +118,34 @@ height: 90%;
   border: solid 2px red;
   grid-column: 1 / span 4;
   grid-row: 1 / span 1;
+  font-size: 1rem;
 }
 .gba-modal-img{
   border: solid 2px red;
   grid-column: 1 / span 4;
   grid-row: 2 / span 8;
+  padding: 4px 0px;
 }
 .gba-modal-desc{
   border: solid 2px red;
   grid-column: 1 / span 4;
-  grid-row: 10 / span 7;
+  grid-row: 11 / span 5;
 }
 .gba-modal-notes{
-  border: solid 2px red;
-    grid-column: 5 / span 4;
+  grid-column: 5 / span 4;
   grid-row: 1 / span 13;
+  border-left: solid 2px black;
+  padding-left: 8px;
+  margin-left: 4px;
+
 }
 .gba-modal-controls{
-  border: solid 2px red;
-    grid-column: 5 / span 4;
+  /* border: solid 2px red; */
+  grid-column: 5 / span 4;
   grid-row: 14 / span 2;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 24px;
 }
 
 
@@ -141,6 +163,7 @@ height: 90%;
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
     display: none;
+    padding: 4px 8px;
   }
   .project-title {
     margin: 0px;
@@ -156,5 +179,6 @@ height: 90%;
     border: 2px solid #000;
     grid-column: 1 / span 4;
     grid-row: 2 / span 5;
+    padding: 4px 0px;
   }
 }

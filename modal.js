@@ -17,12 +17,12 @@ modalSelectors.forEach(selector => selector.addEventListener('click', e => {
     const projectUrl = selector.getAttribute('href');
 
     titleEl.innerHTML = `<h2>${title}</h2>`;
-    imgContainer.innerHTML = `<img src="${image}" alt="${title}" style="width:100%;height:auto;">`
+    imgContainer.innerHTML = `<img src="${image}" alt="${title}" style="width:100%;height:100%;">`
     descEl.innerHTML  = `<p>${description}</p>`;
     notesEl.innerHTML = notes;
 
+
     controlsEl.innerHTML = `
-      <button class="modal-return-button">Close</button>
       <a href="${projectUrl}" class="modal-view-button">Go to Project ↗</a>`;
     showModal();
 
