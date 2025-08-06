@@ -67,6 +67,18 @@
 .modal-content {
 height: 90%;
 }
+.gba-modal-positives-header{
+  margin-top: 12px;
+}
+.gba-modal-positives{
+  margin-top: 12px;
+}
+.gba-modal-negatives-header{
+  margin-top: 12px;
+}
+.gba-modal-negatives{
+  margin-top: 12px;
+}
 .modal-header,
 .modal-footer {
   padding: 1rem;
