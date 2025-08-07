@@ -1,3 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face{
+  font-family: "sys";
+  src: url("fonts/sys.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "VT323";
+  src: url("fonts/VT323-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro";
+  src: url("fonts/munro.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro-narrow";
+  src: url("fonts/munro-narrow.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro-small";
+  src: url("fonts/munro-small.ttf") format("truetype");
+}
+
 .projects-container{
   display: flex;
   flex-direction: column;
@@ -73,23 +101,34 @@ height: 90%;
 .gba-modal-positives{
   margin-top: 12px;
 }
+.gba-modal-positives p{
+  font-size: 20px;
+  font-family: munro, arial;
+}
 .gba-modal-negatives-header{
   margin-top: 12px;
 }
 .gba-modal-negatives{
   margin-top: 12px;
 }
-.modal-header,
-.modal-footer {
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
+.gba-modal-negatives p{
+  font-size: 20px;
+  font-family: munro, arial;
 }
-.modal-footer {
-  border-top: 1px solid #eee;
-  border-bottom: none;
+
+/* .gba-modal-img img{
+  width: auto;
+  height: auto;
+} */
+
+.gba-modal-desc p{
+  font-size: 1.3rem;
+  font-family: munro, arial;
 }
-.modal-body {
-  padding: 1rem;
+
+.gba-modal-notes{
+  font-size: 1rem;
+  padding: 4px 8px;
 }
 
 .modal-return-button {
@@ -97,20 +136,6 @@ height: 90%;
   border: none;
   
   cursor: pointer;
-}
-
-.gba-modal-img img{
-  width: auto;
-  height: auto;
-}
-
-.gba-modal-desc p{
-  font-size: 1.3rem;
-}
-
-.gba-modal-notes{
-  font-size: 1rem;
-  padding: 4px 8px;
 }
 
 /* GBA DECORATIONS, ABOUT */
@@ -139,6 +164,7 @@ height: 90%;
   padding: 4px 0px;
 }
 .gba-modal-desc{
+  padding-left: 8px;
   /* border: solid 2px red; */
   grid-column: 1 / span 4;
   grid-row: 11 / span 5;
@@ -147,8 +173,11 @@ height: 90%;
   grid-column: 5 / span 4;
   grid-row: 1 / span 13;
   border-left: solid 2px black;
-  padding-left: 8px;
+  /* border-bottom: 4px solid #b9bf90; */
+  padding: 0px 8px;
   margin-left: 4px;
+  overflow: scroll;
+
 
 }
 .gba-modal-controls{
