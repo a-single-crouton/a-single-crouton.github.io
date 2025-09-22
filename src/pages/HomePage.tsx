@@ -13,7 +13,6 @@ const HomePage = () => {
       <Header />
       <RecentPostsCarousel />
       <Footer />
-      <p>Homepage works!</p>
       {/* <div className='home-page-grid'>
         <div className='home-column-one'>column-one</div>
         <div className='home-column-two'></div>
