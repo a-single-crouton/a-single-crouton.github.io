@@ -2,59 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home (v2)</title>
-    <link rel="stylesheet" href="core.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite + React + TS</title>
   </head>
   <body>
-    <div id="crt">
-      <div class="scanline"></div>
-      <div id="navbar">
-      </div>
-
-      <div class="header-container">
-        <div class="profile-container">
-          <div class="profile-ring">
-            <div class="profile-background">
-              <img class="profile-sprite" src="images/Max Sprite 2.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="title-container">
-        <h2>William (Max) Weekley</h2>
-      </div>
-      <div class="body-container">
-        <p>Hey, Welcome to my website!</p>
-      </div>
-      <div class="gba-nav-container">
-        <a href="/main/projects.html">
-          <div class="gba-title-box gba-ornaments">
-            <div class="gba-nav-content">
-              <h3>Projects</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="gba-nav-container">
-        <a href="/main/about.html">
-          <div class="gba-title-box gba-ornaments">
-            <div class="gba-nav-content">
-              <h3>About</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="gba-nav-container">
-        <a href="documents/Resume - WW2025.pdf" download="William CV 2025">
-          <div class="gba-title-box gba-ornaments">
-            <div class="gba-nav-content">
-              <h3>CV Download</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
