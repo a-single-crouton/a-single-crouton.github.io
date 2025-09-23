@@ -15,7 +15,7 @@ const closeBtns = modal.querySelectorAll('.modal-return-button');
 const projects = {
   "email-project": {
     title: "SMS Email Notification",
-    image:"../images/email-project.png",
+    image:"../../images/email-project.png",
     description: `An SMS notification designed to be delivered by email and populated with recent message history dynamically populated using typescript. Needed to match existing application UI while functioning properly across all email platforms.`,
     notePositivesHeader: `Why It Matters`,
     notePositives: `This project was my first time dealing with the 
@@ -43,11 +43,10 @@ const projects = {
       information such as message status (i.e. ‘Undelivered’, 
       ‘Failed’, or ‘Sent’) as well as the time the last several
        messages were sent. `,
-    url: `../email-project/email.html`
   },
   "banjaxed-project": {
     title: "Banjaxed Website, wordpress recreation project",
-    image:"../images/banjaxed.png",
+    image:"../../images/banjaxed.png",
     description: `A redesign of banjaxed.com’s original wordpress 
     website. This was a prototype used as a benchmark for our junior
      development team as well as a proff-of-concept for a uniquely 
@@ -68,17 +67,15 @@ const projects = {
     beneficial exposure to PHP and other server-side features. 
     However, at the time I think it back-end work was pretty far out 
     of my depth.`,
-    url: `../email-project/email.html`
   },
   "edgeledger-project": {
     title: "lorem ipsum",
-    image:"../images/email-project.png",
+    image:"../../images/email-project.png",
     description: `lorem ipsum`,
     notePositivesHeader: `lorem ipsum`,
     notePositives: `lorem ipsum`,
     noteNegativesHeader: `lorem ipsum`,
     noteNegatives: `lorem ipsum`,
-    url: `../email-project/email.html`
   }
 
 }
@@ -102,10 +99,6 @@ modalSelectors.forEach(selector => selector.addEventListener('click', e => {
     negativesHeaderEl.innerHTML = `<h2>${info.noteNegativesHeader}</h2>`
     negativesEl.innerHTML = `<p>${info.noteNegatives}</p>`
 
-    controlsEl.innerHTML = `
-      <a href="${info.url}" class="modal-view-button">Go to Project ↗</a>
-    `;
-
 
     // const { title, image, description, notes } = selector.dataset;
     // const projectUrl = selector.getAttribute('href');
@@ -114,10 +107,6 @@ modalSelectors.forEach(selector => selector.addEventListener('click', e => {
     // imgContainer.innerHTML = `<img src="${image}" alt="${title}" style="width:100%;height:100%;">`
     // descEl.innerHTML  = `<p>${description}</p>`;
     // notesEl.innerHTML = notes;
-
-
-    // controlsEl.innerHTML = `
-    //   <a href="${projectUrl}" class="modal-view-button">Go to Project ↗</a>`;
     showModal();
 
 

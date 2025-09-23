@@ -1,32 +1,31 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-@font-face{
-  font-family: "sys";
-  src: url("fonts/sys.ttf") format("truetype");
+@font-face {
+  font-family: 'sys';
+  src: url('fonts/sys.ttf') format('truetype');
 }
 
-@font-face{
-  font-family: "VT323";
-  src: url("fonts/VT323-Regular.ttf") format("truetype");
+@font-face {
+  font-family: 'VT323';
+  src: url('fonts/VT323-Regular.ttf') format('truetype');
 }
 
-@font-face{
-  font-family: "munro";
-  src: url("fonts/munro.ttf") format("truetype");
+@font-face {
+  font-family: 'munro';
+  src: url('fonts/munro.ttf') format('truetype');
 }
 
-@font-face{
-  font-family: "munro-narrow";
-  src: url("fonts/munro-narrow.ttf") format("truetype");
+@font-face {
+  font-family: 'munro-narrow';
+  src: url('fonts/munro-narrow.ttf') format('truetype');
 }
 
-@font-face{
-  font-family: "munro-small";
-  src: url("fonts/munro-small.ttf") format("truetype");
+@font-face {
+  font-family: 'munro-small';
+  src: url('fonts/munro-small.ttf') format('truetype');
 }
 
-.projects-container{
+.projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,8 +82,11 @@
 #projects-modal {
   display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
   z-index: 1000;
@@ -93,25 +95,25 @@
   display: flex;
 }
 .modal-content {
-height: 90%;
+  height: 90%;
 }
-.gba-modal-positives-header{
+.gba-modal-positives-header {
   margin-top: 12px;
 }
-.gba-modal-positives{
+.gba-modal-positives {
   margin-top: 12px;
 }
-.gba-modal-positives p{
+.gba-modal-positives p {
   font-size: 20px;
   font-family: munro, arial;
 }
-.gba-modal-negatives-header{
+.gba-modal-negatives-header {
   margin-top: 12px;
 }
-.gba-modal-negatives{
+.gba-modal-negatives {
   margin-top: 12px;
 }
-.gba-modal-negatives p{
+.gba-modal-negatives p {
   font-size: 20px;
   font-family: munro, arial;
 }
@@ -121,12 +123,12 @@ height: 90%;
   height: auto;
 } */
 
-.gba-modal-desc p{
+.gba-modal-desc p {
   font-size: 1.3rem;
   font-family: munro, arial;
 }
 
-.gba-modal-notes{
+.gba-modal-notes {
   font-size: 1rem;
   padding: 4px 8px;
 }
@@ -134,7 +136,7 @@ height: 90%;
 .modal-return-button {
   background: none;
   border: none;
-  
+
   cursor: pointer;
 }
 
@@ -151,25 +153,25 @@ height: 90%;
   grid-template-rows: repeat(15, 1fr);
 }
 
-.gba-modal-title{
+.gba-modal-title {
   /* border: solid 2px red; */
   grid-column: 1 / span 4;
   grid-row: 1 / span 1;
   font-size: 1rem;
 }
-.gba-modal-img{
+.gba-modal-img {
   /* border: solid 2px red; */
   grid-column: 1 / span 4;
   grid-row: 2 / span 8;
   padding: 4px 0px;
 }
-.gba-modal-desc{
+.gba-modal-desc {
   padding-left: 8px;
   /* border: solid 2px red; */
   grid-column: 1 / span 4;
   grid-row: 11 / span 5;
 }
-.gba-modal-notes{
+.gba-modal-notes {
   grid-column: 5 / span 4;
   grid-row: 1 / span 13;
   border-left: solid 2px black;
@@ -177,15 +179,13 @@ height: 90%;
   padding: 0px 8px;
   margin-left: 4px;
   overflow: scroll;
-
-
 }
-.gba-modal-controls{
+.gba-modal-controls {
   /* border: solid 2px red; */
   grid-column: 5 / span 4;
   grid-row: 14 / span 2;
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   justify-content: flex-end;
   padding-bottom: 16px;
   margin-right: 24px;
@@ -193,16 +193,14 @@ height: 90%;
   border-left: solid black 2px;
 }
 
-
 @media only screen and (max-width: 900px) {
-
   .project-grid {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  padding: 8px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
   .project-desc {
     grid-column: 1 / span 1;
