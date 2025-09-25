@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face{
+  font-family: "sys";
+  src: url("fonts/sys.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "VT323";
+  src: url("fonts/VT323-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro";
+  src: url("fonts/munro.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro-narrow";
+  src: url("fonts/munro-narrow.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "munro-small";
+  src: url("fonts/munro-small.ttf") format("truetype");
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 68px 12px 12px 12px;
+}
+.project-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 8px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 4px double #000;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 6;
+}
+
+.bg-light {
+  background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #2b2b2b;
+}
+
+.project-title {
+  font-weight: bold;
+  margin-left: 8px;
+  grid-column: 4 / span 4;
+  grid-row: 1 / span 1;
+}
+.project-date {
+  font-weight: bold;
+  margin-left: 8px;
+  grid-column: 4 / span 4;
+  grid-row: 2 / span 1;
+}
+.project-desc {
+  margin-left: 8px;
+  font-family: munro, mono;
+  font-size: 22px;
+  grid-column: 4 / span 4;
+  grid-row: 3 / span 4;
+}
+
+/* **PROJECT ITEM MODAL** */
+#projects-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#projects-modal.show {
+  display: flex;
+}
+.modal-content {
+height: 90%;
+}
+.gba-modal-positives-header{
+  margin-top: 12px;
+}
+.gba-modal-positives{
+  margin-top: 12px;
+}
+.gba-modal-positives p{
+  font-size: 20px;
+  font-family: munro, arial;
+}
+.gba-modal-negatives-header{
+  margin-top: 12px;
+}
+.gba-modal-negatives{
+  margin-top: 12px;
+}
+.gba-modal-negatives p{
+  font-size: 20px;
+  font-family: munro, arial;
+}
+
+/* .gba-modal-img img{
+  width: auto;
+  height: auto;
+} */
+
+.gba-modal-desc p{
+  font-size: 1.3rem;
+  font-family: munro, arial;
+}
+
+.gba-modal-notes{
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+.modal-return-button {
+  background: none;
+  border: none;
+  
+  cursor: pointer;
+}
+
+/* GBA DECORATIONS, ABOUT */
+#projects-modal .gba-ornaments {
+  height: 100%;
+}
+
+.gba-about-modal-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+}
+
+.gba-modal-title{
+  /* border: solid 2px red; */
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+  font-size: 1rem;
+}
+.gba-modal-img{
+  /* border: solid 2px red; */
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 8;
+  padding: 4px 0px;
+}
+.gba-modal-desc{
+  padding-left: 8px;
+  /* border: solid 2px red; */
+  grid-column: 1 / span 4;
+  grid-row: 11 / span 5;
+}
+.gba-modal-notes{
+  grid-column: 5 / span 4;
+  grid-row: 1 / span 13;
+  border-left: solid 2px black;
+  /* border-bottom: 4px solid #b9bf90; */
+  padding: 0px 8px;
+  margin-left: 4px;
+  overflow: scroll;
+
+
+}
+.gba-modal-controls{
+  /* border: solid 2px red; */
+  grid-column: 5 / span 4;
+  grid-row: 14 / span 2;
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+  margin-right: 24px;
+  margin-left: 4px;
+  border-left: solid black 2px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .project-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  }
+  .project-desc {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    display: none;
+    padding: 4px 8px;
+  }
+  .project-title {
+    margin: 0px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+  }
+  .project-date {
+    margin: 0px;
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .project-img {
+    border: 2px solid #000;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 5;
+    padding: 4px 0px;
+  }
+}

@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR SECTION */
+#main-nav img {
+  height: 100%;
+}
+
+#main-nav a {
+  color: #2d3030;
+  text-decoration: none;
+}
+
+#main-nav ul {
+  list-style: none;
+}
+
+#main-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  margin-bottom: 5px;
+  border-bottom: #c8cae6 solid 1px;
+}
+
+.nav-center {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.nav-container {
+  display: grid;
+  gap: 13px;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 13px;
+  align-items: center;
+}
+
+.logo-banjaxed {
+  height: 56px;
+  margin: auto;
+}
+
+.logo-banjaxed a {
+  cursor: pointer;
+}
+
+.partner-badge {
+  height: 56px;
+}
+
+#main-nav ul:last-child {
+  grid-column-end: end;
+  justify-self: center;
+  display: flex;
+}
+
+#main-nav ul li a {
+  padding: 16px;
+  font-family: "all-round-gothic", sans-seriff;
+  font-weight: 400;
+}
+
+#main-nav ul li a:hover {
+  color: #2b9ed8;
+}
+
+/* -------------HERO SECTION-------------- */
+.about-hero {
+  height: 800px;
+  background-color: #fff;
+}
+
+.about-hero-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 650px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* Hero Left Side */
+.about-hero-words {
+  margin-top: 50px;
+  padding-right: 50px;
+}
+
+.about-pre-header {
+  font-family: "all-round-gothic", sans-seriff;
+  font-weight: 400;
+  font-style: normal;
+  color: #2b9ed8;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+}
+
+.about-hero-header {
+  font-family: "Hepta Slab", serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+  line-height: 1.4;
+  margin-top: 100px;
+}
+
+.about-hero-partner {
+  display: flex;
+  height: 150px;
+  padding-right: 80px;
+  margin-top: 50px;
+}
+
+.about-partner-badge {
+  height: 100%;
+}
+
+/* Hero Right Side */
+.about-hero-pictures {
+  position: relative;
+  margin-top: 20px;
+}
+
+.about-hero-camping-container {
+  position: absolute;
+  z-index: 1;
+}
+
+.about-hero-camping {
+  width: 100%;
+  height: 100%;
+}
+
+.about-hero-dots-container {
+  width: 400px;
+  height: 400px;
+  float: right;
+  position: relative;
+  top: -75%;
+}
+
+.about-hero-dots {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+/* ----------------ORIGIN STORY SECTION------------------- */
+.origin-story {
+  height: 900px;
+  background-color: #efefef;
+}
+
+.origin-story-container {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+}
+
+.origin-story-logo {
+  height: 800px;
+  margin-left: 15%;
+  position: relative;
+}
+
+.os-logo-img {
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+}
+
+.origin-story-text {
+  height: 900px;
+  margin-right: 10%;
+  margin-left: 34%;
+  position: absolute;
+}
+
+.origin-story-header {
+  font-family: "Hepta Slab", serif;
+  font-weight: 600;
+  font-size: 50px;
+  font-style: normal;
+  margin: 50px 0 20px;
+}
+
+.origin-story-body {
+  font-family: "all-round-gothic", sans-seriff;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.origin-story-body a {
+  text-decoration: none;
+  color: #2b9ed8;
+}
+
+/* --------------------OUR TRAILBLAZING TEAM---------------------- */
+
+.our-team {
+  max-width: 1280px;
+  height: 70vh;
+  background-color: #fff;
+  margin: auto;
+}
+
+.trailblazing-header {
+  font-family: "Hepta Slab", serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.7;
+  padding: 40px;
+}
+
+.our-team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.trailblazing-img {
+  width: 80%;
+  border-radius: 30px;
+  border: solid 1px #71c7db;
+}
+
+.trailblazing-text-container {
+  margin-right: 20%;
+}
+
+.trailblazing-text {
+  font-family: "all-round-gothic", sans-seriff;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+/* --------------------MEET THE LEADERS-------------------- */
+
+.meet-the-leadership {
+  height: 240vh;
+  background-color: #efefef;
+}
+
+.leadership-container {
+  margin: 0 150px;
+}
+
+.leadership-header {
+  font-family: "Hepta Slab", serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 1.7;
+  padding: 40px 0px;
+}
+
+.our-leaders-container-1,
+.our-leaders-container-2 {
+  display: flex;
+}
+
+.our-leaders-container-2 {
+  margin-top: 100px;
+}
+
+#drew,
+#seth {
+  width: 550px;
+  margin-right: 200px;
+}
+
+#tyler,
+#salil {
+  width: 550px;
+}
+
+.leader-img-container {
+  height: 280px;
+  width: 280px;
+}
+
+.leader-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.leader-name-container {
+  font-family: "all-round-gothic", sans-seriff;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+.leader-title-container {
+  font-family: "all-round-gothic", sans-seriff;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: #2b9ed8;
+}
+
+.leader-story-container {
+  font-family: "all-round-gothic", sans-seriff;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+/* --------------------FOOTER SECTION----------------------- */
+#main-footer {
+  background: #fff;
+  font-family: all-round-gothic, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  border-top: #c8cae6 solid 1px;
+  padding-top: 70px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.logo-container {
+  width: 70px;
+  height: 70px;
+  margin-left: 400px;
+  margin-right: 40px;
+}
+
+.logo-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.list-paragraph {
+  font-size: 24px;
+  color: #2d3030;
+  width: 400px;
+}
+
+.footer-list {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+  color: #2b9ed8;
+  width: 280px;
+}
+
+.footer-list li a {
+  color: #2b9ed8;
+}
+
+.contact {
+  margin-left: 16px;
+}
+
+.contact p {
+  color: #2b9ed8;
+  font-size: 20px;
+}
+
+.contact-links li a {
+  text-decoration: none;
+  list-style: none;
+  color: #2d3030;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.contact-links li a:hover {
+  text-decoration: none;
+  list-style: none;
+  color: #2b9ed8;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.about-btn-subscribe {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #71c7db;
+  width: 220px;
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: none;
+  margin-top: 13px;
+  border: none;
+}
+
+.about-btn-subscribe:hover {
+  background-color: #71c7db;
+  border: solid 1.5px #71c7db;
+  cursor: pointer;
+}
+
+.social {
+  grid-column: 4 / span 5;
+}
+
+.social button {
+  height: 45px;
+  width: 45px;
+  margin-right: 8px;
+  box-shadow: none;
+  justify-content: space-between;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #2d3030;
+  border: solid 1px #71c7db;
+}
+
+.social button:hover {
+  cursor: pointer;
+  border: solid 1.5px #2b9ed8;
+  box-shadow: 0.5px 0.5px 10px #d9d9d9, -0.5px -0.5px 10px #d9d9d9;
+  transition: 0.2s ease-in-out;
+}
+
+.footer-container li,
+li a {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#main-footer .copyright {
+  grid-column: 1 / span 5;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 12px;
+  margin-bottom: 13px;
+  padding-top: 50px;
+}
