@@ -4,7 +4,6 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage.tsx';
 import BlogIndex from './pages/BlogIndex';
 import PostPage from './pages/PostPage';
-import AboutPage from './pages/AboutPage.tsx';
 import ProjectIndex from './pages/ProjectIndex.tsx';
 
 import App from './App.tsx';

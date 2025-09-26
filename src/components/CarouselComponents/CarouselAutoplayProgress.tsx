@@ -16,7 +16,7 @@ export const useAutoplayProgress = <ProgressElement extends HTMLElement>(
 
   const startProgress = useCallback(
     (timeUntilNext: number | null) => {
-      const node = progressNode.current;
+      const node = progressNode?.current ?? null;
 
       if (!node) return;
       if (timeUntilNext === null) return;
