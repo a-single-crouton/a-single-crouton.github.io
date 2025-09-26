@@ -5,9 +5,6 @@ import '../components/CarouselComponents/embla-styles.css';
 import RecentPostsCarousel from '../components/CarouselComponents/RecentPostsCarousel';
 
 const HomePage = () => {
-  // const OPTIONS: EmblaOptionsType = { loop: true };
-  // const SLIDE_COUNT = 5;
-  // const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <>
       <Header />
