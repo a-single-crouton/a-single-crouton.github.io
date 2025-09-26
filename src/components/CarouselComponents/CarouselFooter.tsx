@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer: React.FC = () => (
+const CarouselFooter: React.FC = () => (
   <footer className='footer'>
     <a
       className='footer__link'
@@ -18,4 +18,4 @@ const Footer: React.FC = () => (
   </footer>
 );
 
-export default Footer;
+export default CarouselFooter;

@@ -102,9 +102,9 @@ modalSelectors.forEach(selector => selector.addEventListener('click', e => {
     negativesHeaderEl.innerHTML = `<h2>${info.noteNegativesHeader}</h2>`
     negativesEl.innerHTML = `<p>${info.noteNegatives}</p>`
 
-    controlsEl.innerHTML = `
-      <a href="${info.url}" class="modal-view-button">Go to Project ↗</a>
-    `;
+    // controlsEl.innerHTML = `
+    //   <a href="${info.url}" class="modal-view-button">Go to Project ↗</a>
+    // `;
 
 
     // const { title, image, description, notes } = selector.dataset;
