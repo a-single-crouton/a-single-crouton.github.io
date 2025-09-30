@@ -1,7 +1,9 @@
-const PostTag = () => {
+type Props = { label: string };
+
+const PostTag = ({ label }: Props) => {
   return (
     <>
-      <div className='post-tag'>Development Log</div>
+      <div className='post-tag'>{label}</div>
     </>
   );
 };
