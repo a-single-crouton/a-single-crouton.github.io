@@ -8,7 +8,7 @@ const PostHeader = ({ meta }: Props) => {
   return (
     <>
       <div className='post-header'>
-        <PostImage />
+        <PostImage src={meta?.image || '/hero-images/generic-dev-image.jpg'} />
         <PostTitleCard meta={meta} />
       </div>
     </>

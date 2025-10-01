@@ -1,10 +1,12 @@
-const PostImage = () => {
+type Props = { src?: string };
+
+const PostImage = ({ src }: Props) => {
   return (
     <>
       <div className='post-image-container'>
         <img
           className='post-image'
-          src='hero-images/generic-dev-image.jpg'
+          src={src || 'hero-images/generic-dev-image.jpg'}
           alt=''
         />
       </div>
