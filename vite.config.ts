@@ -8,6 +8,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { transformerCopyButton } from '@rehype-pretty/transformers';
+import { h } from 'hastscript'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -20,7 +21,7 @@ export default defineConfig({
       ],
       rehypePlugins: [
         rehypeSlug,
-        [rehypeAutolinkHeadings, { behavior: "wrap"}],
+        [rehypeAutolinkHeadings, { behavior: "append", properties: { className: ['anchor'], content: h('span', { class:'anchor-icon', 'aria-hidden': true }, '¶') }}],
         [
           rehypePrettyCode,
           {

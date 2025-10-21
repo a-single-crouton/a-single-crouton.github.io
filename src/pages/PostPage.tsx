@@ -2,30 +2,26 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import PostHeader from '../components/PostComponents/PostHeader';
+import { getPostBySlug, type PostMeta } from '../utils/postHandler';
 
 const PostPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const [Content, setContent] = useState<React.ComponentType | null>(null);
+  const [meta, setMeta] = useState<PostMeta | null>(null);
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
-    if (!slug) return;
-    const modules = import.meta.glob('../posts/*.mdx') as Record<
-      string,
-      () => Promise<any>
-    >;
-    const path = `../posts/${slug}.mdx`;
-    const loader = modules[path];
-
-    if (!loader) {
-      setNotFound(true);
-      return;
-    }
-
-    setNotFound(false);
-    loader().then((mod) => {
-      setContent(() => mod.default);
-    });
+    (async () => {
+      if (!slug) return;
+      const result = await getPostBySlug(slug);
+      if (!result) {
+        setNotFound(true);
+        return;
+      }
+      setNotFound(false);
+      setContent(() => result.component);
+      setMeta(result.meta);
+    })();
   }, [slug]);
 
   if (notFound)
@@ -33,7 +29,7 @@ const PostPage = () => {
       <>
         <div className='post-container'>
           <div className='post'>
-            <PostHeader />
+            <PostHeader meta={null} />
             <div className='post-body'>Post not found.</div>
           </div>
         </div>
@@ -44,7 +40,7 @@ const PostPage = () => {
     <>
       <div className='post-container'>
         <div className='post'>
-          <PostHeader />
+          <PostHeader meta={meta} />
           <div className='post-body'>
             {Content ? <Content /> : <p>Loading...</p>}
           </div>
