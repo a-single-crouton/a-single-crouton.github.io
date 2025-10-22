@@ -25,7 +25,7 @@ export default defineConfig({
         [
           rehypePrettyCode,
           {
-            theme: "gruvbox-light-hard",
+            theme: "light-plus",
             keepBackground: true,
             transformers: [
               transformerCopyButton({

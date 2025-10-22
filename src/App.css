@@ -3,12 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
-/* body {
-  background-color: #35353d;
-} */
+body {
+  background-color: #f2f2f2;
+}
+
+[data-line] span {
+  font-family: 'JetBrains Mono', monospace;
+}
 
 button {
   all: unset;
@@ -22,15 +26,16 @@ button {
   align-items: center;
   height: 64px;
   /* background-color: #43434d; */
-  background-color: #fffaf1;
-  border-bottom: 1px solid #faa634;
-  margin-bottom: 32px;
+  background-color: #3a3a3a;
+  border-bottom: 1px solid #fff;
+  /* margin-bottom: 32px; */
 }
 
 .nav-namespace {
   padding: 0px 12px;
   width: 100%;
   font-size: 28px;
+  color: #fff;
 }
 
 .nav-list {
@@ -42,12 +47,56 @@ button {
 }
 
 .nav-item {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
   padding: 0px 16px;
 }
 
+/* HOME PAGE STYLING */
+.anim-track {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-section {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.anim-overlay {
+  position: absolute;
+  /* display: inline; */
+  inset: 0;
+  z-index: 1;
+  /* width: 100%;
+  height: 600px; */
+  background-image: linear-gradient(
+    to right,
+    rgba(238, 238, 238, 1),
+    rgba(238, 238, 238, 1),
+    rgba(238, 238, 238, 0.8),
+    rgb(238, 238, 238, 0),
+    rgba(238, 238, 238, 0)
+  );
+}
+.landing-content {
+  margin: 24px;
+  width: 340px;
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  /* width: 100%;
+  height: 600px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: left;
+  color: #000;
+}
+.hero-text {
+  font-size: 2rem;
+}
 /* INDEX PAGES STYLING */
 /* styles duplicated to decouple blog and project page styling as needed*/
 
@@ -97,10 +146,10 @@ button {
   align-items: center;
   margin: 24px 0px;
   padding: 0px 12px;
-  background-color: #fffaf1;
+  background-color: #ffffff;
   height: 180px;
   width: 100%;
-  border-bottom: 1px solid #faa634;
+  border-bottom: 2px solid #3a3a3a;
 }
 
 .blog-item-img-container,
@@ -131,18 +180,18 @@ button {
 .project-item-title {
   font-size: 28px;
   font-weight: 400;
-  margin: 8px 0px 4px 0px;
+  margin: 8px 0px 12px 0px;
 }
 
 .blog-tag {
-  font-size: 12px;
-  padding: 2px 4px;
+  /* font-size: 16px; */
+  padding: 2px 8px;
   margin: 8px 4px;
   border-radius: 5px;
   /* background-color: #3333cc; */
   /* color: #bcbceb; */
-  background-color: #faa634;
-  color: #333333;
+  background-color: #5564ff;
+  color: #f2f2f2;
 }
 
 .blog-item-excerpt {
@@ -196,7 +245,7 @@ button {
   padding: 16px;
   height: auto;
   width: 600px;
-  background-color: #fffaf1;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 4px 8px #7d7d7d;
   color: #333333;
@@ -213,9 +262,9 @@ button {
   width: fit-content;
   padding: 4px 12px;
   border-radius: 5px;
-  background-color: #faa634;
+  background-color: #5564ff;
   font-size: 14px;
-  color: #333333;
+  color: #f2f2f2;
   white-space: nowrap;
 }
 
@@ -378,7 +427,7 @@ pre [data-highlighted-line] {
 /* Card */
 .proj-card {
   margin-bottom: 24px;
-  background: #fffaf1;
+  background: #f2f2f2;
   border: 1px solid #565662;
   border-radius: 12px;
   padding: 0.75rem;
@@ -448,7 +497,7 @@ pre [data-highlighted-line] {
 }
 .proj-card__accordion details {
   margin: 0.25rem 0.25rem;
-  background: #fffaf1;
+  background: #fff;
   border: 1px solid #52525e;
   border-radius: 8px;
   padding: 0.5rem 0.75rem;
@@ -474,7 +523,7 @@ pre [data-highlighted-line] {
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
   border: 1px solid #6a6a78;
-  background: #fffaf1;
+  background: #fff;
   color: #333;
   text-decoration: none;
 }
