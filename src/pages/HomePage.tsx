@@ -1,15 +1,15 @@
 // import type { EmblaOptionsType } from 'embla-carousel';
-import CarouselHeader from '../components/CarouselComponents/CarouselHeader';
-import CarouselFooter from '../components/CarouselComponents/CarouselFooter';
-import '../components/CarouselComponents/embla-styles.css';
-import RecentPostsCarousel from '../components/CarouselComponents/RecentPostsCarousel';
-import AnimationTrack from '../components/HomeComponents/AnimationTrack';
+import CarouselHeader from '../components/HomeComponents/CarouselComponents/CarouselHeader';
+import CarouselFooter from '../components/HomeComponents/CarouselComponents/CarouselFooter';
+import '../components/HomeComponents/CarouselComponents/embla-styles.css';
+import RecentPostsCarousel from '../components/HomeComponents/CarouselComponents/RecentPostsCarousel';
+import AnimationBanner from '../components/HomeComponents/AnimationBanner';
 
 const HomePage = () => {
   return (
     <>
       <div className='hero-section'>
-        <AnimationTrack
+        <AnimationBanner
           src='/anim-block-shift.png'
           segmentWidth={1100} // exact CSS width of ONE segment
           height={600}

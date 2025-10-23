@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Carousel from './Carousel';
-import type { PostMeta } from '../../utils/postHandler';
-import { getRecentPostMeta } from '../../utils/postHandler';
+import type { PostMeta } from '../../../utils/postHandler';
+import { getRecentPostMeta } from '../../../utils/postHandler';
 import './embla-styles.css';
 
 export default function RecentPostsCarousel() {

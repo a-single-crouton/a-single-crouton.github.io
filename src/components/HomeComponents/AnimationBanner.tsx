@@ -10,7 +10,7 @@ type Props = {
   className?: string;
 };
 
-const AnimationTrack = ({
+const AnimationBanner = ({
   src,
   segmentWidth,
   height,
@@ -101,4 +101,4 @@ const AnimationTrack = ({
   );
 };
 
-export default AnimationTrack;
+export default AnimationBanner;
