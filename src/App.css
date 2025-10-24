@@ -61,7 +61,7 @@ button {
 }
 .hero-section {
   position: relative;
-  height: 600px;
+  height: 100vh;
   overflow: hidden;
 }
 .anim-overlay {
@@ -73,11 +73,11 @@ button {
   height: 600px; */
   background-image: linear-gradient(
     to right,
-    rgba(238, 238, 238, 1),
-    rgba(238, 238, 238, 1),
-    rgba(238, 238, 238, 0.8),
-    rgb(238, 238, 238, 0),
-    rgba(238, 238, 238, 0)
+    rgba(242, 242, 242, 1),
+    rgba(242, 242, 242, 1),
+    rgba(242, 242, 242, 0.8),
+    rgb(242, 242, 242, 0),
+    rgba(242, 242, 242, 0)
   );
 }
 .landing-content {

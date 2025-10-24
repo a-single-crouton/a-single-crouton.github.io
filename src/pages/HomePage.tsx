@@ -11,8 +11,8 @@ const HomePage = () => {
       <div className='hero-section'>
         <AnimationBanner
           src='/anim-block-shift.png'
-          segmentWidth={1100} // exact CSS width of ONE segment
-          height={600}
+          segmentWidth={1605} // exact CSS width of ONE segment
+          height={'auto'}
           durationSec={40}
           direction='left'
           className=''
@@ -20,7 +20,7 @@ const HomePage = () => {
         <div className='anim-overlay'></div>
         <div className='landing-content'>
           <div className='hero-text'>
-            <h1>Prototyped, designed, and built for people.</h1>
+            <h1>Prototyped, designed, and built around people.</h1>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 type Props = {
   src: string; // PNG of ONE seamless segment
   segmentWidth: number; // CSS px width of that segment (not @2x pixels)
-  height: number; // CSS px height
+  height: string; // CSS px height
   durationSec?: number; // how long to move exactly one segment
   direction?: 'left' | 'right';
   className?: string;
@@ -60,7 +60,12 @@ const AnimationBanner = ({
           alt=''
           width={segmentWidth}
           height={height}
-          style={{ width: segmentWidth, height, display: 'block' }}
+          style={{
+            width: segmentWidth,
+            height,
+            objectFit: 'cover',
+            display: 'block',
+          }}
         />
       )),
     [count, src, segmentWidth, height]
