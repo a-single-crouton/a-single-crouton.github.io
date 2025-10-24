@@ -1,5 +1,5 @@
-const HirePage = () => {
+const SalesPage = () => {
   return <></>;
 };
 
-export default HirePage;
+export default SalesPage;
