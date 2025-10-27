@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage.tsx';
 import BlogIndex from './pages/BlogIndex';
 import PostPage from './pages/PostPage';
 import ProjectIndex from './pages/ProjectIndex.tsx';
-// import SalesPage from './pages/SalesPage.tsx';
+import ServicesPage from './pages/ServicesPage.tsx';
 import AboutPage from './pages/AboutPage.tsx';
 
 import App from './App.tsx';
@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path='/' element={<App />}>
           <Route index element={<HomePage />} />
           <Route path='blog' element={<BlogIndex />} />
-          {/* <Route path='services' element={<SalesPage />} /> */}
+          <Route path='services' element={<ServicesPage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='blog/:slug' element={<PostPage />} />
           {/* <Route path='about' element={<AboutPage />} /> */}

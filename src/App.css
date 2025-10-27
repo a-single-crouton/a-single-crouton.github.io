@@ -27,7 +27,7 @@ button {
   height: 64px;
   /* background-color: #43434d; */
   background-color: #3a3a3a;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
   /* margin-bottom: 32px; */
 }
 
@@ -51,6 +51,21 @@ button {
   text-decoration: none;
   font-size: 20px;
   padding: 0px 16px;
+}
+
+/* TOAST NOTIFICATION STYLING */
+
+.toast-notif {
+  width: 100vw;
+  height: 48px;
+  padding: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.toast-warning {
+  background-color: #ffd587;
+  color: #c46800;
 }
 
 /* HOME PAGE STYLING */
@@ -184,12 +199,9 @@ button {
 }
 
 .blog-tag {
-  /* font-size: 16px; */
   padding: 2px 8px;
   margin: 8px 4px;
   border-radius: 5px;
-  /* background-color: #3333cc; */
-  /* color: #bcbceb; */
   background-color: #5564ff;
   color: #f2f2f2;
 }
@@ -216,7 +228,6 @@ button {
 
 .post {
   width: 80%;
-  /* background-color: #35353d; */
   border-radius: 5px;
 }
 
@@ -292,12 +303,10 @@ button {
 
 .post-body {
   padding: 16px;
-  /* color: #c9c8c8; */
   color: #333;
   font-size: 16px;
   line-height: 1.6;
   border-radius: 5px;
-  /* background-color: #43434d; */
 }
 .post-footer {
   min-height: 48px;
@@ -457,7 +466,6 @@ pre [data-highlighted-line] {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* height: 400px; */
 }
 .proj-card__img {
   width: auto;
@@ -488,7 +496,7 @@ pre [data-highlighted-line] {
   opacity: 1;
 }
 .proj-card:not(.is-open) .proj-card__collapsible {
-  opacity: 0; /* fades during collapse */
+  opacity: 0;
 }
 
 /* Inner accordion */
@@ -544,4 +552,153 @@ pre [data-highlighted-line] {
 .proj-card .proj-card__collapsible > * {
   opacity: 0.999;
   transform: translateY(0);
+}
+
+/* SERVICES */
+.services-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  width: 100vw;
+}
+.services-table {
+  padding: auto 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px 24px;
+  align-items: stretch;
+  /* border: solid 2px #3f3f3f; */
+}
+.services-card {
+  /* margin: 0px 16px; */
+  padding: 8px 16px 16px 16px;
+  /* border: solid 1px #cccccc; */
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.build-service-icon {
+  fill: #ff6b6b;
+}
+
+.refresh-service-icon {
+  fill: #5564ff;
+}
+
+.maintain-service-icon {
+  fill: #ffc950;
+}
+
+.data-service-icon {
+  fill: #c83deb;
+}
+.services-icon-container {
+  margin: 16px 0px;
+  width: 50px;
+  height: 50px;
+}
+.services-title {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.services-subtitle {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.services-price {
+  padding: 16px 0px;
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.pretext {
+  margin-right: 8px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 600;
+}
+.services-list-container {
+  /* width: auto;
+  min-height: 372px; */
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.services-list {
+  list-style: inside;
+  margin: 0;
+  padding-inline-start: 1.1em;
+  flex: 0 0 auto;
+}
+
+.services-list li {
+  margin: 16px 0px;
+}
+
+.build-list li::marker {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+}
+
+.refresh-list li::marker {
+  font-size: 1.5rem;
+  color: #5564ff;
+}
+
+.maintain-list li::marker {
+  font-size: 1.5rem;
+  color: #ffc950;
+}
+
+.data-list li::marker {
+  font-size: 1.5rem;
+  color: #c83deb;
+}
+
+.services-cta-container {
+  width: 100%;
+  margin: auto;
+  padding: 32px 0px 0px 0px;
+}
+
+.services-cta {
+  width: 100%;
+  border-radius: 24px;
+  padding: 16px 0px;
+  text-align: center;
+  /* border: solid 2px grey; */
+}
+
+.build-cta {
+  background-color: #ff6b6b;
+  font-weight: 500;
+  color: #fff;
+}
+
+.refresh-cta {
+  background-color: #5564ff;
+  font-weight: 500;
+  color: #fff;
+}
+
+.maintain-cta {
+  background-color: #ffc950;
+  font-weight: 500;
+  color: #fff;
+}
+
+.data-cta {
+  background-color: #c83deb;
+  font-weight: 500;
+  color: #fff;
 }

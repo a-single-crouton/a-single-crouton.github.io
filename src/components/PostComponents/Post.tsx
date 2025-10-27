@@ -1,4 +1,4 @@
-import Navbar from '../Navbar';
+import Navbar from '../SiteComponents/Navbar';
 import PostBody from './PostBody';
 import PostHeader from './PostHeader';
 import type { PostMeta } from '../../utils/postHandler';
