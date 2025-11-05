@@ -554,7 +554,7 @@ pre [data-highlighted-line] {
   transform: translateY(0);
 }
 
-/* SERVICES */
+/* SERVICES - Cards */
 .services-table-container {
   display: flex;
   justify-content: center;
@@ -571,6 +571,7 @@ pre [data-highlighted-line] {
   /* border: solid 2px #3f3f3f; */
 }
 .services-card {
+  background-color: #fff;
   /* margin: 0px 16px; */
   padding: 8px 16px 16px 16px;
   /* border: solid 1px #cccccc; */
@@ -701,4 +702,81 @@ pre [data-highlighted-line] {
   background-color: #c83deb;
   font-weight: 500;
   color: #fff;
+}
+
+/* SERVICES - Form */
+.form-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 60px;
+}
+
+.services-list-container {
+  margin: 16px 0px;
+}
+
+.services-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+}
+.services-form {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 560px;
+  height: 100%;
+}
+.services-form-header {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.services-form-entry-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-form-submit {
+  border-radius: 5px;
+  background-color: #5564ff;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  text-align: center;
+}
+
+.form-blurb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.form-blurb-header {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.form-blurb-subheader {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #888888;
+  margin-bottom: 24px;
+}
+
+.form-blurb-content {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 135%;
+  width: 55%;
 }

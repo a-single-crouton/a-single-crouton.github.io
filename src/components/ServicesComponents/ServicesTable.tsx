@@ -16,9 +16,6 @@ const ServicesTable = () => {
           <div className='services-subtitle'>
             Welcome to your new site. Built from scratch.
           </div>
-          <div className='services-price'>
-            <span className='pretext'>Starting From </span>650.00$
-          </div>
           <div className='services-list-container'>
             <ul className='services-list build-list'>
               <li>Brand-new website, built from the ground up</li>
@@ -27,9 +24,9 @@ const ServicesTable = () => {
               <li></li>
               <li>SEO-friendly setup</li>
             </ul>
-            <div className='services-cta-container'>
+            {/* <div className='services-cta-container'>
               <button className='services-cta build-cta'>Get A Quote!</button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='services-card'>
@@ -46,9 +43,6 @@ const ServicesTable = () => {
           <div className='services-subtitle'>
             Update your site’s look and feel without starting over.
           </div>
-          <div className='services-price'>
-            <span className='pretext'>Starting From </span>500.00$
-          </div>
           <div className='services-list-container'>
             <ul className='services-list refresh-list'>
               <li>Revamp existing site with updated design and layout</li>
@@ -57,9 +51,9 @@ const ServicesTable = () => {
               <li>Accessibility & SEO touch-up</li>
               <li>Includes 1 round of revisions</li>
             </ul>
-            <div className='services-cta-container'>
+            {/* <div className='services-cta-container'>
               <button className='services-cta refresh-cta'>Get A Quote!</button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='services-card'>
@@ -76,9 +70,6 @@ const ServicesTable = () => {
           <div className='services-subtitle'>
             Keep your site running smoothly month after month.
           </div>
-          <div className='services-price'>
-            <span className='pretext'>Starting From </span>75.00$/mo.
-          </div>
           <div className='services-list-container'>
             <ul className='services-list maintain-list'>
               <li>Monthly maintenance and content updates</li>
@@ -87,11 +78,11 @@ const ServicesTable = () => {
               <li>Monthly summary of fixes and recommendations</li>
               <li>“Set it and forget it” reliability</li>
             </ul>
-            <div className='services-cta-container'>
+            {/* <div className='services-cta-container'>
               <button className='services-cta maintain-cta'>
                 Get A Quote!
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='services-card'>
@@ -108,9 +99,7 @@ const ServicesTable = () => {
           <div className='services-subtitle'>
             See what’s working, what’s not, and where to grow next.
           </div>
-          <div className='services-price'>
-            <span className='pretext'>Starting From </span>100.00$/quarter
-          </div>
+
           <div className='services-list-container'>
             <ul className='services-list data-list'>
               <li>Quarterly performance report (SEO, traffic, usability)</li>
@@ -119,9 +108,9 @@ const ServicesTable = () => {
               <li>3-page summary + recommended actions</li>
               <li>Optional consultation call (+$50)</li>
             </ul>
-            <div className='services-cta-container'>
+            {/* <div className='services-cta-container'>
               <button className='services-cta data-cta'>Get A Quote!</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
